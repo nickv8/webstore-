@@ -1,8 +1,59 @@
+body {
+    margin: 0;
+}
+
 button {
    border-radius: 20px;
-   
+   align-self: center;
 }
 
 h1 {
-    font-size: larger;
+    font-size: 4em;
+    text-align: center;
+}
+
+.banner  {
+    width: 100%;
+   
+}
+
+.search {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    
+    
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    border: black;
+}
+
+button#addToCart {
+        position: relative;
+
+}
+
+.row img {
+    padding: 2em;
+    display: inline-flexbox;
+    
+}
+
+
+#addToCart {
+    position: absolutet;
+    justify-self:center;
 }
