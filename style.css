@@ -2,6 +2,15 @@ body {
     margin: 0;
 }
 
+nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
 button {
    border-radius: 20px;
    align-self: center;
@@ -17,12 +26,7 @@ h1 {
    
 }
 
-.search {
-    display:flex;
-    justify-content: center;
-    padding-bottom: 2em;
-    
-}
+
 
 
 .container {
