@@ -1,7 +1,6 @@
 body {
     margin: 0;
 }
-
 nav {
     display: flex;
     align-content: center;
@@ -9,6 +8,10 @@ nav {
     justify-content: space-between;
     padding: 20px;
     background-color: chartreuse;
+}
+
+.btn-primary {
+    border-radius: 5px;
 }
 
 button {
