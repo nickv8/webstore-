@@ -13,12 +13,12 @@ var shoppingCart = (function () {
 
     //Save Cart
     function saveCart() {
-        sessionStorage.setItems('shoppingCart'), JSON.stringify(cart);
+       sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
     }
 
     //Load Cart
     function loadCart() {
-        cart = JSON.parse(sessionsStorage.getItems('shoppingCart'));
+        cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
     }
     if (sessionStorage.getItem("shoppingCart") != null) {
         loadCart();
@@ -79,7 +79,7 @@ obj.setCountforItem = function (name, count) {
     obj.totalCount = function () {
         var totalCount = 0;
         for (var item in cart) {
-            totalCount += cart[items].count;
+            totalCount += cart[item].count;
         }
         return totalCount;
     }
@@ -113,7 +113,7 @@ obj.setCountforItem = function (name, count) {
 //Trigger / Events
 
 $('.add-to-cart').click(function (event) {
-    event.pereventDefault();
+    event.preventDefault();
     var name = $(this).data('name');
     var price = Number($(this).data('price'));
     shoppingCart.addItemToCart(name, price, 1);
@@ -130,7 +130,7 @@ function displayCart() {
     var cartArray = shoppingCart.listCart();
     var output = "";
     for (var i in cartArray) {
-        out += "<tr>"
+        output += "<tr>"
             + "<td>" + cartArray[i].name + "</td>"
             + "<td> (" + cartArray[i].price + ")</td>"
             + "<td><div class = 'input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
