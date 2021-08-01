@@ -49,7 +49,7 @@ obj.setCountforItem = function (name, count) {
         if (cart[i].name === name) {
             cart[i].count = count;
             break;
-        }
+        } 
     }
 };
     
