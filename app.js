@@ -58,7 +58,7 @@ obj.setCountforItem = function (name, count) {
         for (var item in cart) {
             if (cart[item].name === name) {
                 cart[item].count--;
-                if (cart[cart].count === 0) {
+                if (cart[item].count === 0) {
                     cart.splice(item, 1);
                 }
                 break;
@@ -75,7 +75,7 @@ obj.setCountforItem = function (name, count) {
         }
         saveCart();
     }
-//Clear cart
+//Item Total in Cart
     obj.totalCount = function () {
         var totalCount = 0;
         for (var item in cart) {
@@ -122,7 +122,7 @@ $('.add-to-cart').click(function (event) {
 
 //clear items
 $('.clear-cart').click(function () {
-    shoppingCart.clearCart();
+    shoppingCart.removeItemFromCart;
     displayCart();
 });
 
