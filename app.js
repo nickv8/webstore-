@@ -120,11 +120,16 @@ $('.add-to-cart').click(function (event) {
     displayCart();
 });
 
+
+//Display Cart
 $('.btn-cart').click(function () {
     $(".modal").toggle();
 })
 
-
+//close cart
+$('.btn-secondary').click(function () {
+    $(".modal").toggle();
+})
 
 //clear items
 $('.clear-cart').click(function () {
