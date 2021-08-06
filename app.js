@@ -71,7 +71,10 @@ obj.setCountforItem = function (name, count) {
         for (var item in cart) {
             if (cart[item].name === name) {
                 cart.splice(item, 1);
+            } if (cart[item].count >=1) {
+                cart.splice(item);
             }
+            break;
         }
         saveCart();
     }
@@ -133,7 +136,7 @@ $('.btn-secondary').click(function () {
 
 //clear items
 $('.clear-cart').click(function () {
-    shoppingCart.removeItemFromCart;
+    shoppingCart.removeItemFromCartAll();
     displayCart();
 });
 

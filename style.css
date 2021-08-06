@@ -17,7 +17,7 @@ nav {
     background-color: lightsteelblue;
     max-width: fit-content;
     position: absolute;
-top: 40px; right: 40px;
+    top: 40px; right: 40px;
 }
 
 .btn-primary {
