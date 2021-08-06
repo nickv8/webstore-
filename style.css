@@ -10,6 +10,10 @@ nav {
     background-color: chartreuse;
 }
 
+.modal {
+    visibility: inherit;
+}
+
 .btn-primary {
     border-radius: 5px;
     
