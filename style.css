@@ -17,7 +17,7 @@ nav {
     background-color: rgb(68, 134, 98);
     max-width: fit-content;
     position: absolute;
-    top: 40px; right: 40px;
+    top: 40px; right: 15%;
     border-radius: 10px;
 }
 

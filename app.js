@@ -142,11 +142,16 @@ $('.clear-cart').click(function () {
 
 //order now button
 $('.order-now').click(function () {
-    $(".modal").toggle();
-    shoppingCart.removeItemFromCartAll();
-    displayCart();
-    alert('Thank you for your order')
-})
+    if (shoppingCart.totalCart() > 0) {
+        $(".modal").toggle();
+        shoppingCart.removeItemFromCartAll();
+        displayCart();
+        alert('Thank you for your order')
+    } else {
+        alert('There is nothing in your cart')
+        $(".modal").toggle();
+    }
+}) 
 
 function displayCart() {
     var cartArray = shoppingCart.listCart();
