@@ -140,6 +140,14 @@ $('.clear-cart').click(function () {
     displayCart();
 });
 
+//order now button
+$('.order-now').click(function () {
+    $(".modal").toggle();
+    shoppingCart.removeItemFromCartAll();
+    displayCart();
+    alert('Thank you for your order')
+})
+
 function displayCart() {
     var cartArray = shoppingCart.listCart();
     var output = "";

@@ -14,10 +14,11 @@ nav {
 .modal {
     visibility: inherit;
     display: block;
-    background-color: lightsteelblue;
+    background-color: rgb(68, 134, 98);
     max-width: fit-content;
     position: absolute;
     top: 40px; right: 40px;
+    border-radius: 10px;
 }
 
 .btn-primary {
