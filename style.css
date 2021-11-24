@@ -70,6 +70,7 @@ h1 {
     display: flex;
     justify-content: center;
     border: black;
+    margin-top: 2em;
 }
 
 button#addToCart {
@@ -78,7 +79,7 @@ button#addToCart {
 }
 
 .row img {
-    padding: 2em;
+    padding: 1em;
     display: inline-flexbox;
     
 }
