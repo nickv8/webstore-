@@ -10,8 +10,12 @@
 </head>
 <nav class="navbar">
         <div class="signin">Sign Up/Login</div>
-        <div class="search"><input type="text" name="search" id="search" placeholder="search">
-            <button name="search" id="submit">Submit</button></div>
+        <div class="search">
+          <form action ="/search/" method= "GET">
+          <input type="text" name="search" id="search" placeholder="search">
+            <button name="search" id="submit">Submit</button>
+          </form>
+        </div>
             <button type="button" class="btn btn-cart btn-primary" data-toggle="modal" data-target="#cart">Cart <span class="total-count"></span></button><button class="clear-cart btn btn-danger" data-name=" + cartArray[i].name + ">Clear Cart</button></div>
         </nav>
 <div>
@@ -23,8 +27,8 @@
 
 <div class="container">
 <div class="row">
-    <img src="https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_3887000/altimages/ff_3887280-f5ef1a5608e2788dfb29alt1_full.jpg&w=300" alt="jersey">
-    <button id="addcart" data-name="custom_jersey" data-price="60" class="add-to-cart btn btn-primary">Add to Cart</button>
+    <img src="https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_3887000/altimages/ff_3887280-f5ef1a5608e2788dfb29alt1_full.jpg&w=300" alt="custom jersey">
+    <button id="addcart" data-name="custom-jersey" data-price="60" class="add-to-cart btn btn-primary">Add to Cart</button>
 
 </div>
 <div class="row">
@@ -38,7 +42,7 @@
     <button id="addcart" data-name="hat" data-price="20" class="add-to-cart btn btn-primary">Add to Cart</button>
 </div><div class="row">
     <img src="https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_4048000/altimages/ff_4048140-a3a11faf4a4548827eacalt1_full.jpg&w=300" alt="black shirt">
-    <button id="addcart" data-name="golf_shirt" data-price="45" class="add-to-cart btn btn-primary">Add to Cart</button>
+    <button id="addcart" data-name="golf-shirt" data-price="45" class="add-to-cart btn btn-primary">Add to Cart</button>
 </div>
 </div>
 <body>
@@ -68,6 +72,6 @@
       </div> 
       
          
-    <script src="app.js"></script>
+    <script src="shopping-cart.js"></script>
 </body>
 </html>
